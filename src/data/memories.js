@@ -42,12 +42,10 @@ export const memories = [
     date: 'Always',
     rotation: 2,
   },
-  // ——— Add your photos below ———
   {
-    image: '/images/placeholder-add-yours.svg',
-    caption: '👉 Replace: put your file in /public/images/ and update this entry',
-    date: 'YYYY',
+    image: '/images/2026-graduation.jpeg',
+    caption: 'A proud new chapter for us 🎓💗',
+    date: '2026',
     rotation: -1,
-    isPlaceholder: true,
   },
 ]
