@@ -272,7 +272,11 @@ body {
 .birthday-scene {
   position: relative;
   margin: 2rem auto;
-  max-width: 28rem;
+  max-width: 52rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
 
 .balloons {
@@ -303,6 +307,32 @@ body {
 .cake-wrap {
   position: relative;
   padding-top: 3rem;
+  flex: 0 1 20rem;
+}
+
+.birthday-polaroid {
+  position: relative;
+  z-index: 1;
+  width: min(15rem, 42vw);
+  margin: 2rem 0 0;
+  padding: 0.7rem 0.7rem 1.25rem;
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(92, 74, 94, 0.16);
+  transform: rotate(4deg);
+  text-align: left;
+}
+
+.birthday-polaroid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.birthday-polaroid figcaption {
+  margin: 0.65rem 0 0;
+  color: var(--ink);
+  font-size: 1.15rem;
 }
 
 .cake {
@@ -1292,6 +1322,18 @@ body {
 @media (min-width: 640px) {
   .ticket-grid {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 639px) {
+  .birthday-scene {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .birthday-polaroid {
+    width: min(15rem, 75vw);
+    margin-top: 0;
   }
 }
 

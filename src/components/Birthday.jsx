@@ -69,6 +69,10 @@ export default function Birthday() {
               {allOut ? 'Wish made! ✨' : 'Click each candle to blow them out 🕯️'}
             </p>
           </div>
+          <figure className="birthday-polaroid">
+            <img src="/images/polaroid-classic.png" alt="A classic memory of us" />
+            <figcaption className="handwriting">A little memory of us 💗</figcaption>
+          </figure>
           <div className="birthday-confetti" ref={confettiRef} aria-hidden="true" />
         </div>
 

@@ -5,6 +5,14 @@
 export const videos = [
   {
     type: 'local',
+    video: '/videos/lage.mp4',
+    thumbnail: '/images/placeholder-video.svg',
+    title: 'Lage 🎬',
+    date: '2026',
+    description: 'Another little memory for our cinema.',
+  },
+  {
+    type: 'local',
     video: '/videos/biddi-jaleli.mp4',
     thumbnail: '/images/placeholder-video.svg',
     title: 'Biddi Jaleli 😂',
