@@ -1127,10 +1127,12 @@ body {
 /* Music */
 .music-card {
   padding: 1.5rem;
-  max-width: 32rem;
+  max-width: 72rem;
+}
 
 .music-track-list {
   display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
 
@@ -1145,7 +1147,6 @@ body {
   margin: 1rem 0;
   border: 0;
   border-radius: 12px;
-}
 }
 
 .music-meta {
@@ -1374,6 +1375,10 @@ body {
 }
 
 @media (max-width: 639px) {
+  .music-track-list {
+    grid-template-columns: 1fr;
+  }
+
   .birthday-scene {
     flex-direction: column;
     gap: 1.25rem;
