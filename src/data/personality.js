@@ -5,7 +5,7 @@ export const personalityCards = [
     emoji: '🎀',
     title: 'Her favorite things',
     teaser: 'Tap to peek',
-    reveal: 'Edit me in src/data/personality.js — add her real favorites!',
+    reveal: 'Cute little animals, nice food, and me.',
     effect: 'flip',
   },
   {
@@ -13,7 +13,7 @@ export const personalityCards = [
     emoji: '🍫',
     title: 'Things she cannot say no to',
     teaser: 'Tap to peek',
-    reveal: 'Snacks, soft blankets, and probably one more episode.',
+    reveal: 'All the cheese-loaded food and dancing with me.',
     effect: 'bounce',
   },
   {
@@ -21,7 +21,7 @@ export const personalityCards = [
     emoji: '😂',
     title: 'Her funniest habits',
     teaser: 'Tap to peek',
-    reveal: 'The way she laughs at her own jokes before finishing them.',
+    reveal: 'Using a weirdly cute language that makes me laugh like hell. Example: Bamche.',
     effect: 'shake',
   },
   {
@@ -29,7 +29,7 @@ export const personalityCards = [
     emoji: '💗',
     title: 'Things I love about her',
     teaser: 'Tap to peek',
-    reveal: 'Your heart, your humor, and how safe you make everything feel.',
+    reveal: 'Nothing... nope, kidding, everything.',
     effect: 'flip',
   },
   {
@@ -37,7 +37,7 @@ export const personalityCards = [
     emoji: '🙄',
     title: 'Things she does that annoy me',
     teaser: 'Tap to peek',
-    reveal: 'Taking forever to reply… then sending seventeen voice notes. (Still love you.)',
+    reveal: 'Making another friend whose name is Sakshi.',
     effect: 'shake',
   },
   {
@@ -45,7 +45,7 @@ export const personalityCards = [
     emoji: '🤣',
     title: 'Things only we understand',
     teaser: 'Tap to peek',
-    reveal: 'That one reference. You know the one. 😌',
+    reveal: 'Our weird jokes that no one gets.',
     effect: 'bounce',
   },
   {
@@ -53,7 +53,7 @@ export const personalityCards = [
     emoji: '🦋',
     title: 'Her personality in 5 words',
     teaser: 'Tap to peek',
-    reveal: 'Warm. Funny. Loyal. Chaotic. Teteriki.',
+    reveal: 'Crazy, cute, my personal therapist, loving, kind.',
     effect: 'flip',
   },
 ]
