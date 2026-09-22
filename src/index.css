@@ -1098,6 +1098,15 @@ body {
 .music-card {
   padding: 1.5rem;
   max-width: 32rem;
+
+.music-youtube {
+  display: block;
+  width: 100%;
+  min-height: 166px;
+  margin: 1rem 0;
+  border: 0;
+  border-radius: 12px;
+}
 }
 
 .music-meta {

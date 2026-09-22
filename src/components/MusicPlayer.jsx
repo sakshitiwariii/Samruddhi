@@ -46,19 +46,29 @@ export default function MusicPlayer() {
         <p className="section-label handwriting">Optional vibes only 🎵</p>
         <div className="music-card glass-card">
           <p>🎵 <strong>Press play for the soundtrack of this little memory.</strong></p>
-          <audio
-            ref={audioRef}
-            src={musicTrack.src}
-            preload="metadata"
-            onTimeUpdate={onTimeUpdate}
-            onLoadedMetadata={(e) => setDuration(e.currentTarget.duration || 0)}
-            onEnded={() => setPlaying(false)}
-          />
+          {musicTrack.type === 'youtube' ? (
+            <iframe
+              className="music-youtube"
+              src={musicTrack.src}
+              title={musicTrack.title}
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            />
+          ) : (
+            <audio
+              ref={audioRef}
+              src={musicTrack.src}
+              preload="metadata"
+              onTimeUpdate={onTimeUpdate}
+              onLoadedMetadata={(e) => setDuration(e.currentTarget.duration || 0)}
+              onEnded={() => setPlaying(false)}
+            />
+          )}
           <div className="music-meta">
             <span>{musicTrack.title}</span>
             <span className="music-artist">{musicTrack.artist}</span>
           </div>
-          <div className="music-controls">
+          {musicTrack.type !== 'youtube' && <div className="music-controls">
             <button type="button" className="btn-round" onClick={toggle} aria-label={playing ? 'Pause' : 'Play'}>
               {playing ? '⏸' : '▶'}
             </button>
@@ -80,8 +90,8 @@ export default function MusicPlayer() {
                 }}
               />
             </label>
-          </div>
-          {!duration && (
+          </div>}
+          {musicTrack.type !== 'youtube' && !duration && (
             <p className="music-hint">Add your song at <code>/public/music/our-song.mp3</code></p>
           )}
         </div>

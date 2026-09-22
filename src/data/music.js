@@ -1,5 +1,6 @@
 export const musicTrack = {
-  src: '/music/our-song.mp3',
-  title: 'Our Soundtrack (replace me)',
-  artist: 'Add artist in src/data/music.js',
+  type: 'youtube',
+  src: 'https://www.youtube.com/embed/xC1cj9zhh6k?enablejsapi=1',
+  title: 'Woh Din Bhi Kya Din The',
+  artist: 'YouTube',
 }
