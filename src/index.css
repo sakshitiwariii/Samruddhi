@@ -1129,6 +1129,15 @@ body {
   padding: 1.5rem;
   max-width: 32rem;
 
+.music-track-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.music-track {
+  min-width: 0;
+}
+
 .music-youtube {
   display: block;
   width: 100%;
