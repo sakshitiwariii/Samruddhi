@@ -79,6 +79,24 @@ export default function Birthday() {
         <div className="sticker-row" aria-hidden="true">
           <span>🎈</span><span>🎉</span><span>✨</span><span>🧁</span><span>💗</span>
         </div>
+
+        {allOut && (
+          <article className="birthday-reveal" aria-live="polite">
+            <p className="birthday-reveal__sparkle handwriting">A birthday page just for you ✨</p>
+            <p className="birthday-reveal__message">
+              Dhanga lak laka lak dhanga laka lak, bale bale te shava shawa shawa piyo piyo te kawa!
+              <br />
+              Happy peppy birthday samruddddhhiiiiiiiiiii!
+              <br />
+              I love you so muchhhhhhhhhhhhh!
+              <br />
+              I am really sorry I forgot the day, but I wish you a great, great, greatest happiness in your life.
+              <br />
+              And you are coming to Bangalore, we are getting a flat together and I will make you do all the chores...
+              he hee heeeeeeee......
+            </p>
+          </article>
+        )}
       </div>
     </section>
   )
