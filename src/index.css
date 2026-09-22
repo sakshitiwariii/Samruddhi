@@ -1121,6 +1121,8 @@ body {
 }
 
 .polaroid--empty .polaroid__frame--empty {
+  position: relative;
+  overflow: hidden;
   display: grid;
   place-items: center;
   aspect-ratio: 4/5;
@@ -1132,6 +1134,42 @@ body {
     #ffeef5 20px
   );
   font-size: 2rem;
+  cursor: pointer;
+}
+
+.polaroid--empty .polaroid__frame--empty img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.future-upload-hint {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 0.45rem;
+  color: #fff;
+  background: rgba(92, 74, 94, 0.72);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.polaroid--empty:hover .future-upload-hint,
+.polaroid--empty:focus-within .future-upload-hint {
+  opacity: 1;
+}
+
+.future-remove {
+  display: block;
+  margin: 0.4rem auto 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink-soft);
+  cursor: pointer;
+  font: 0.75rem var(--font-body);
+  text-decoration: underline;
 }
 
 .future-message {
