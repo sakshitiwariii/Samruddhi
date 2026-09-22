@@ -11,7 +11,14 @@ function TimelineItem({ item }) {
         <span className="timeline-item__year">{item.year}</span>
         <h3>{item.title}</h3>
         <p>{item.story}</p>
-        <img src={item.image} alt="" loading="lazy" className="timeline-item__photo" />
+        {item.type === 'video' ? (
+          <video controls playsInline preload="metadata" className="timeline-item__photo">
+            <source src={item.media} type="video/mp4" />
+            Your browser does not support this video.
+          </video>
+        ) : (
+          <img src={item.media} alt={item.title} loading="lazy" className="timeline-item__photo" />
+        )}
       </div>
     </article>
   )
